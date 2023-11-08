@@ -1,4 +1,4 @@
-<main id="home">
+<section>
   <div class="container h-100">
     <div class="row h-100">
       <div class="col-7 align-self-center">
@@ -19,110 +19,12 @@
       </div>
     </div>
   </div>
-</main>
-
-<section id="about" class="section-tb">
-  <div class="container">
-    <div class="row justify-content-around">
-      <div class="col-5">
-        <div class="about-img-container">
-          <img src="assets/img/sunnyspot-me-maggie.jpg" alt="Me and Maggie">
-        </div>
-      </div>
-      <div class="col-6 align-self-center">
-        <h2 class="pb-4">Welcome to my website</h2>
-        <p>My name is Brionna & I provide professional pet care services for cats, dogs, horses, and any other animal
-          you may have! I have been in the animal care industry for over a decade & I am fully Licensed and Insured. My
-          services include pet sitting and nail trims. All services are done in your home so that your pets are
-          comfortable & less stressed. It is also more convenient for you. No more shoving your cat in a carrier or
-          loading your dogs in the car to drive to the salon for a nail trim. No more having to leave your pets in a
-          boarding kennel. I come to you!</p>
-        <h4>My service area includes: Roseville, Rocklin, Lincoln & Granite Bay in Northern California.</h4>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section id="experiences" class="section-tb">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">Experience</h2>
-        <p class="text-center pb-4">Here's a little information about me in a nutshell.</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col" *ngFor="let data of experienceData">
-        <div class="d-flex" *ngFor="let experience of data">
-          <div class="experience-bullet-point"></div>
-          <div>
-            <h4 class="fw-bold">{{ experience.title }}</h4>
-            <p class="tmb-0">{{ experience.subTitle }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-home-about></app-home-about>
 
-<section id="nail-trim-packages" class="section-tb">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-7">
-        <div class="text-center">
-          <h2>Nail Trim Packages</h2>
-          <p>Regular nail trims are essential for healthy & happy pets.</p>
-          <p class="pb-4">Not only can long nails get snagged in the carpet & hurt you when your pet jumps on your lap,
-            it can also be
-            painful for your pet. In dogs, long nails can cause the feet to splay out & put extra pressure on the toes.
-            Long term, this can cause shoulder, elbow & knee injuries, & can also contribute to arthritis. For geriatric
-            dogs & active sporting dogs it is even more important to have short nails because long nails can hinder
-            balance.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-3" *ngFor="let package of nailTrimPackages">
-        <div class="card">
-          <div class="card-img-top">
-            <img src="assets/img/dummy-image-square.jpg" alt="">
-          </div>
-          <div class="card-body">
-            <h4>{{ package.title }}</h4>
-            <h5>{{ package.price | currency }}</h5>
-            <p>{{ package.description }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-home-experience></app-home-experience>
 
-<section id="contact" class="section-b">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Contact Me</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <p>The best way to reach me is by texting me. I am busy during the day caring for animals which is always my
-          first priority & many times I am not able to listen to voicemails in a timely fashion. For a quicker response
-          time you can text, or email, and fill out a New Client Intake Form - Thank you</p>
-      </div>
-      <div class="col-6">
-        <div class="d-flex">
-          <div class="ms-auto">
-            <div class="d-flex mb-3" *ngFor="let contactInfo of contactInfos">
-              <div class="contact-mat-icon-container">
-                <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
-              </div>
-              <p class="my-auto">{{ contactInfo.info }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<app-home-services></app-home-services>
+
+<app-home-contact></app-home-contact>

@@ -1,0 +1,15 @@
+.about-img-container {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 35% 35%;
+  border-top-right-radius: 65% 70%;
+  border-bottom-right-radius: 70% 30%;
+  border-bottom-left-radius: 30% 65%;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

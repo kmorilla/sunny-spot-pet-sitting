@@ -2,7 +2,7 @@
 
 .navbar {
   background-color: $bgColor;
-  height: 3rem;
+  height: $navbarHeight;
 
   .navbar-brand {
     img {

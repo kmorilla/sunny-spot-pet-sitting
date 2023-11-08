@@ -1,0 +1,22 @@
+.card {
+  height: 100%;
+
+  .card-img-top {
+    height: 15rem;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    background-color: #fafafa;
+
+    h4 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  }
+}

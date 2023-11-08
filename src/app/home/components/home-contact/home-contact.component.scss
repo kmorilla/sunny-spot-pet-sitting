@@ -1,0 +1,21 @@
+@import "../../../../variables";
+
+section {
+  background-color: #fafafa;
+  border-top-left-radius: 90% 100%;
+  border-top-right-radius: 10% 10%;
+  margin-top: 5rem;
+
+  .contact-mat-icon-container {
+    height: 40px;
+    width: 40px;
+    background-color: $accentColor;
+    margin-right: 1rem;
+    display: flex;
+    border-radius: 50%;
+
+    mat-icon {
+      margin: auto;
+    }
+  }
+}

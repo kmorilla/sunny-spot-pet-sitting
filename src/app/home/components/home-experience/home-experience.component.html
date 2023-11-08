@@ -1,0 +1,21 @@
+<section class="section-tb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center">Experience</h2>
+        <p class="text-center pb-4">Here's a little information about me in a nutshell.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col" *ngFor="let data of experienceData">
+        <div class="d-flex" *ngFor="let experience of data">
+          <div class="experience-bullet-point"></div>
+          <div>
+            <h4 class="fw-bold">{{ experience.title }}</h4>
+            <p class="tmb-0">{{ experience.subTitle }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

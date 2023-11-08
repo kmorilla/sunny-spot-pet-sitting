@@ -1,0 +1,28 @@
+<section class="section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Contact Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>The best way to reach me is by texting me. I am busy during the day caring for animals which is always my
+          first priority & many times I am not able to listen to voicemails in a timely fashion. For a quicker response
+          time you can text, or email, and fill out a New Client Intake Form - Thank you</p>
+      </div>
+      <div class="col-6">
+        <div class="d-flex">
+          <div class="ms-auto">
+            <div class="d-flex mb-3" *ngFor="let contactInfo of contactInfos">
+              <div class="contact-mat-icon-container">
+                <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
+              </div>
+              <p class="my-auto">{{ contactInfo.info }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
