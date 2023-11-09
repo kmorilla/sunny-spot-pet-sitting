@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IServiceCard } from '../../home-services.model';
-import { NailTrimData } from './home-services-nail-trim.data';
+import { NailTrimDataServiceCards } from './home-services-nail-trim.data';
+import { IServiceCard } from '../home-service-card/home-service-card.model';
 
 @Component({
   selector: 'app-home-services-nail-trim',
@@ -8,5 +8,5 @@ import { NailTrimData } from './home-services-nail-trim.data';
   styleUrls: ['./home-services-nail-trim.component.scss']
 })
 export class HomeServicesNailTrimComponent {
-  nailTrimPackages: IServiceCard[] = NailTrimData;
+  serviceCards: IServiceCard[] = NailTrimDataServiceCards;
 }

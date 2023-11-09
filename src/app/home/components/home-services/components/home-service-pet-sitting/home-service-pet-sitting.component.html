@@ -1,0 +1,21 @@
+<section class="section-tb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="text-center">
+          <h2>In-Home Pet Sitting</h2>
+          <p class="pb-4">Daily care for your pets while you're at work or away. Your pets will get all the attention
+            they need without leaving home. I will ensure that your furry family members are comfortable & safe. Having
+            a stranger come into your home is a very personal/vulnerable experience. Needing to
+            trust someone to care for your precious pets as well as your home. I promise to respect your home & care for
+            your pets better than my own!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-6" *ngFor="let serviceCard of serviceCards">
+        <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
+      </div>
+    </div>
+  </div>
+</section>

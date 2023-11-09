@@ -1,0 +1,20 @@
+<section class="section-tb">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <div class="text-center">
+          <h2>Dog Walking</h2>
+          <p>Every dog loves a walk. I offer private walks around the neighborhood.
+          Whether your dog needs to go potty while you're at work or needs exercise to get some of that energy out,
+          I have a service to fit.</p>
+          <p class="pb-4">LIMITED SPOTS AVAILABLE</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-3 justify-content-center">
+      <div class="col-6" *ngFor="let serviceCard of serviceCards">
+        <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
+      </div>
+    </div>
+  </div>
+</section>

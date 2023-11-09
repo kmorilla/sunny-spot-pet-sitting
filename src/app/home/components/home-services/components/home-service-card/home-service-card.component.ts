@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IServiceCard } from './home-service-card.model';
 
 @Component({
   selector: 'app-home-service-card',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-service-card.component.scss']
 })
 export class HomeServiceCardComponent {
-
+  @Input() serviceCard!: IServiceCard;
 }

@@ -1,25 +1,26 @@
-﻿import { IServiceCard } from '../../home-services.model';
+﻿import { DummyImageConstant } from '../../../../../constants/image.constant';
+import { IServiceCard } from '../home-service-card/home-service-card.model';
 
-export const NailTrimData: IServiceCard[] = [
+export const NailTrimDataServiceCards: IServiceCard[] = [
   {
-    image: 'assets/img/dummy-image-square.jpg',
+    image: DummyImageConstant,
     title: 'The Puppy Dog',
-    price: 35,
-    description: 'Includes nail trim & nail grinding & ear cleaning'
+    price: '$35',
+    description: [ 'Includes nail trim & nail grinding & ear cleaning' ]
   }, {
-    image: 'assets/img/dummy-image-square.jpg',
+    image: DummyImageConstant,
     title: 'Puppy Dog Plus',
-    price: 40,
-    description: 'Includes nail trim & nail grinding, ear cleaning, <span class="primary-color">PLUS</span> paw balm & scented spritz'
+    price: '$40',
+    description: [ 'Includes nail trim & nail grinding, ear cleaning, <span class="primary-color">PLUS</span> paw balm & scented spritz' ]
   }, {
-    image: 'assets/img/dummy-image-square.jpg',
+    image: DummyImageConstant,
     title: 'Dapper Dog',
-    price: 45,
-    description: 'Includes nail trim & nail grinding, ear cleaning, paw balm & scented spritz, <span class="primary-color">PLUS</span> breathe refresh gel'
+    price: '$45',
+    description: [ 'Includes nail trim & nail grinding, ear cleaning, paw balm & scented spritz, <span class="primary-color">PLUS</span> breathe refresh gel' ]
   }, {
-    image: 'assets/img/dummy-image-square.jpg',
+    image: DummyImageConstant,
     title: 'Purr-fect Paws',
-    price: 35,
-    description: 'Don\'t forget the cats! Includes nail trim & ear cleaning (using cat safe wipes)'
+    price: '$35',
+    description: [ 'Don\'t forget the cats! Includes nail trim & ear cleaning (using cat safe wipes)' ]
   }
 ];

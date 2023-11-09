@@ -16,6 +16,8 @@ import { HomeServicesComponent } from './home/components/home-services/home-serv
 import { HomeServicesNailTrimComponent } from './home/components/home-services/components/home-services-nail-trim/home-services-nail-trim.component';
 import { HomeServiceCardComponent } from './home/components/home-services/components/home-service-card/home-service-card.component';
 import { HomeContactComponent } from './home/components/home-contact/home-contact.component';
+import { HomeServiceWalkingComponent } from './home/components/home-services/components/home-service-walking/home-service-walking.component';
+import { HomeServicePetSittingComponent } from './home/components/home-services/components/home-service-pet-sitting/home-service-pet-sitting.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { HomeContactComponent } from './home/components/home-contact/home-contac
     HomeServicesNailTrimComponent,
     HomeServiceCardComponent,
     HomeContactComponent,
+    HomeServiceWalkingComponent,
+    HomeServicePetSittingComponent,
   ],
   imports: [
     BrowserModule,
