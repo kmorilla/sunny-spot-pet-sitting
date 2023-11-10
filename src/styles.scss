@@ -12,11 +12,13 @@ body {
   margin: 0;
   font-family: $bodyFont;
   background-color: $bgColor;
+  //background-color: rgba(#8a799c, .1);
 }
 
 h1, h2 {
   font-family: $headerFont;
   color: $primaryColor;
+  //color: #6A2990;
 }
 
 h1 {
@@ -32,7 +34,12 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
 }
 
 h3, h4 {
@@ -40,7 +47,7 @@ h3, h4 {
 }
 
 .primary-color {
-  //color: $primaryColor;
+  color: $primaryColor;
 }
 
 .section-t {

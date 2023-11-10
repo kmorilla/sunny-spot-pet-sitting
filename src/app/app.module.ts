@@ -18,6 +18,8 @@ import { HomeServiceCardComponent } from './home/components/home-services/compon
 import { HomeContactComponent } from './home/components/home-contact/home-contact.component';
 import { HomeServiceWalkingComponent } from './home/components/home-services/components/home-service-walking/home-service-walking.component';
 import { HomeServicePetSittingComponent } from './home/components/home-services/components/home-service-pet-sitting/home-service-pet-sitting.component';
+import { HomeGalleryComponent } from './home/components/home-gallery/home-gallery.component';
+import { HomeGalleryBlockComponent } from './home/components/home-gallery/components/home-gallery-block/home-gallery-block.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { HomeServicePetSittingComponent } from './home/components/home-services/
     HomeContactComponent,
     HomeServiceWalkingComponent,
     HomeServicePetSittingComponent,
+    HomeGalleryComponent,
+    HomeGalleryBlockComponent,
   ],
   imports: [
     BrowserModule,

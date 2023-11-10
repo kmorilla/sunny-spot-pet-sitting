@@ -1,4 +1,4 @@
-<section class="section-tb">
+<section class="section-tb" *ngIf="!showSecondVersion">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-7">
@@ -14,6 +14,31 @@
     <div class="row g-3 justify-content-center">
       <div class="col-6" *ngFor="let serviceCard of serviceCards">
         <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tb" *ngIf="showSecondVersion">
+  <div class="container">
+    <div class="row g-5 justify-content-center">
+      <div class="col-6">
+        <div>
+          <h2>Dog Walking</h2>
+          <h5 class="fw-bold">$35</h5>
+          <p>Every dog loves a walk. I offer private walks around the neighborhood.
+            Whether your dog needs to go potty while you're at work or needs exercise to get some of that energy out,
+            I have a service to fit.</p>
+          <p>I come to your home to take your dog on a private walk around your neighborhood.
+            I walk your dog one-on-one to provide individual attention.
+            Your dog can investigate all the new smells, go potty, & get some of those wiggles out.</p>
+          <p class="pb-4">LIMITED SPOTS AVAILABLE</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="img-container">
+          <img [src]="img" alt="">
+        </div>
       </div>
     </div>
   </div>

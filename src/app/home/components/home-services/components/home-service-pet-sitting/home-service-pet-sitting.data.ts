@@ -1,4 +1,4 @@
-﻿import { DummyImageConstant } from '../../../../../constants/image.constant';
+﻿import { DummyImageConstant, TestIconConstant } from '../../../../../constants/image.constant';
 import { IServiceCard } from '../home-service-card/home-service-card.model';
 
 export const PetSittingDataServiceCards: IServiceCard[] = [
@@ -9,7 +9,8 @@ export const PetSittingDataServiceCards: IServiceCard[] = [
     description: [
       'Kitties are my specialty! I drop by your home to provide fresh food & water for your cats, and scoop the litter box at every drop-in. Each cat has a different personality and different needs. I will play & give attention to your cat, if they are outgoing. And if they are shy and prefer to be left alone, I will give them their space. I can also collect your mail, water your houseplants, & pull your trash bin to the curb. Standard drop-in visit is 30 minutes. Drop-ins are scheduled in 2 hour arrival windows. These arrival windows are Mornings: between 8am to 10am; Midday: between 12pm to 2pm; and Evenings: between 4pm to 6pm. At every drop-in I will notify you of my arrival and departure and send photo updates of your cats.',
       'Price includes 2 cats, +$5 if more than two cats.'
-    ]
+    ],
+    blob: '50% 50% 80% 20% / 35% 70% 30% 65%'
   }, {
     image: DummyImageConstant,
     title: 'Pet Sitting',
@@ -22,7 +23,8 @@ export const PetSittingDataServiceCards: IServiceCard[] = [
     These arrival windows are Mornings: between 8am to 10am; Midday: between 12pm to 2pm; and Evenings: between 4pm to 6pm.
     At every drop-in I will notify you of my arrival and departure and send photo updates of your pets.`,
       'Price includes 2 pets, +$5 if more than two pets.'
-    ]
+    ],
+    blob: '50% 50% 65% 35% / 20% 80% 50% 50%'
   },
   {
     image: DummyImageConstant,
@@ -38,7 +40,8 @@ export const PetSittingDataServiceCards: IServiceCard[] = [
       The Bed & Breakfast Service is another alternative for extended care without me staying overnight.
       I also have a Live-in Service which guarantees your pet will not be alone for more than four hours at a time.
       For the live-in service, I charge $240 for each 24 hour period.`
-    ]
+    ],
+    blob: '60% 40% 60% 40% / 60% 80% 35% 65%'
   },
   {
     image: DummyImageConstant,
@@ -48,6 +51,7 @@ export const PetSittingDataServiceCards: IServiceCard[] = [
       `Also called an "Almost Overnight," my Bed & Breakfast service includes two 1.5 hour drop-ins, one at bedtime and the other the next morning.
       These drop-ins typically take place at 8pm - 9:30pm and 8am - 9:30am.
       This is a good option if you would like extended care but don’t need me to stay overnight.`
-    ]
+    ],
+    blob: '45% 55% 65% 35% / 30% 60% 40% 60%'
   }
 ];

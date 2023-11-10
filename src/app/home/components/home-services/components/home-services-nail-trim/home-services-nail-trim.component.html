@@ -1,10 +1,10 @@
-<section class="section-tb">
+<section class="section-tb" *ngIf="!showSecondVersion">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="text-center">
           <h2>Nail Trim Packages</h2>
-          <p class="pb-4">Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
+          <p class="pb-5">Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
             in the carpet & hurt you when your pet jumps on your lap, it can also be painful for your pet. In dogs, long
             nails can cause the feet to splay out & put extra pressure on the toes.
             Long term, this can cause shoulder, elbow & knee injuries, & can also contribute to arthritis. For geriatric
@@ -13,9 +13,43 @@
         </div>
       </div>
     </div>
-    <div class="row g-3">
+    <div class="row g-4">
       <div class="col-3" *ngFor="let serviceCard of serviceCards">
         <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section *ngIf="showSecondVersion">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9">
+        <div class="text-xl-center">
+          <h2>Nail Trim Packages</h2>
+          <p class="pb-5">Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
+            in the carpet & hurt you when your pet jumps on your lap, it can also be painful for your pet. In dogs, long
+            nails can cause the feet to splay out & put extra pressure on the toes.
+            Long term, this can cause shoulder, elbow & knee injuries, & can also contribute to arthritis. For geriatric
+            dogs & active sporting dogs it is even more important to have short nails because long nails can hinder
+            balance.</p>
+        </div>
+      </div>
+      <div class="col-xl-12">
+        <div class="row g-4">
+          <div class="col-3" *ngFor="let serviceCard of serviceCards2">
+            <div class="icon-card">
+              <div class="img-container">
+                <img src="{{ serviceCard.image }}" alt="puppy-dog">
+              </div>
+              <div class="text-center">
+                <h4 class="fw-bold">{{ serviceCard.title }}</h4>
+                <h5 class="fw-bold">{{ serviceCard.price }}</h5>
+                <p *ngFor="let desc of serviceCard.description" [innerHTML]="desc"></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

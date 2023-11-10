@@ -3,4 +3,5 @@
   title: string;
   price: string;
   description: string[];
+  blob?: string;
 }

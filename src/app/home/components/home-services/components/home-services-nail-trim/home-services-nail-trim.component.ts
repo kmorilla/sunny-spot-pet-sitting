@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NailTrimDataServiceCards } from './home-services-nail-trim.data';
+import { Component, Input } from '@angular/core';
+import { NailTrimDataServiceCards, NailTrimDataServiceCards2 } from './home-services-nail-trim.data';
 import { IServiceCard } from '../home-service-card/home-service-card.model';
 
 @Component({
@@ -8,5 +8,8 @@ import { IServiceCard } from '../home-service-card/home-service-card.model';
   styleUrls: ['./home-services-nail-trim.component.scss']
 })
 export class HomeServicesNailTrimComponent {
+  @Input() showSecondVersion: boolean = false;
+
   serviceCards: IServiceCard[] = NailTrimDataServiceCards;
+  serviceCards2: IServiceCard[] = NailTrimDataServiceCards2;
 }

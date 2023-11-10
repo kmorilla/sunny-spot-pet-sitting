@@ -1,8 +1,13 @@
 @import "src/styles";
 
 .navbar {
-  background-color: $bgColor;
   height: $navbarHeight;
+  background-color: transparent;
+  transition-duration: 0.5s;
+
+  &.solid{
+    background-color: $bgColor;
+  }
 
   .navbar-brand {
     img {

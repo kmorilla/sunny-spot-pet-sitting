@@ -2,24 +2,20 @@
 
 section {
   height: calc(100vh - $navbarHeight);
+  position: relative;
+
+  //.bg-blob {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  height: 100%;
+  //  width: 80%;
+  //  background-color: #fff;
+  //  z-index: -1000;
+  //}
 
   .home-img-container {
-    position: relative;
     display: flex;
-
-    .home-img-backdrop {
-      position: absolute;
-      top: 11%;
-      left: 30px;
-      z-index: -100;
-      height: 73%;
-      width: 100%;
-      background-color: $accentColor;
-      border-top-left-radius: 35% 35%;
-      border-top-right-radius: 65% 55%;
-      border-bottom-right-radius: 40% 45%;
-      border-bottom-left-radius: 60% 65%;
-    }
 
     .home-img {
       width: 80%;

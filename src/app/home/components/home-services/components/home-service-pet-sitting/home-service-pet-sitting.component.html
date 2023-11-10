@@ -1,4 +1,4 @@
-<section class="section-tb">
+<section class="section-tb" *ngIf="!showSecondVersion">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
@@ -15,6 +15,43 @@
     <div class="row g-3">
       <div class="col-6" *ngFor="let serviceCard of serviceCards">
         <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-tb" *ngIf="showSecondVersion">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="text-center">
+<!--      <div class="col-12">-->
+<!--        <div class="">-->
+          <h2>In-Home Pet Sitting</h2>
+          <p class="pb-5">Daily care for your pets while you're at work or away. Your pets will get all the attention
+            they need without leaving home. I will ensure that your furry family members are comfortable & safe. Having
+            a stranger come into your home is a very personal/vulnerable experience. Needing to
+            trust someone to care for your precious pets as well as your home. I promise to respect your home & care for
+            your pets better than my own!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5">
+      <div class="col-12" *ngFor="let serviceCard of serviceCards; let even = even;">
+        <div class="row g-5">
+          <div class="col-9" [class.order-1]="even">
+            <div>
+              <h4 class="fw-bold">{{serviceCard.title}}</h4>
+              <h5 class="fw-bold">{{serviceCard.price}}</h5>
+              <p *ngFor="let desc of serviceCard.description">{{ desc }}</p>
+            </div>
+          </div>
+          <div class="col-3" [class.order-0]="even">
+            <div class="icon-container">
+              <img src="{{serviceCard.image}}" alt="" [style.border-radius]="serviceCard.blob">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

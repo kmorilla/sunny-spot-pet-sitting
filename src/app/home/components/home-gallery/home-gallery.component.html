@@ -1,0 +1,18 @@
+<section class="section-tb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center pb-5">
+          <h2>Gallery</h2>
+          <p class="mb-0">My latest & greatest photos.</p>
+          <p>I love to take pictures & show off the great pets I get to meet.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-3" *ngFor="let petInfo of petInfos">
+        <app-home-gallery-block [galleryBlock]="petInfo"></app-home-gallery-block>
+      </div>
+    </div>
+  </div>
+</section>

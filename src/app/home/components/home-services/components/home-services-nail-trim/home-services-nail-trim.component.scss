@@ -1,1 +1,14 @@
+.icon-card {
+  .img-container{
+    height: 7rem;
+    padding: 1rem;
+    display: flex;
 
+    img {
+      margin: auto;
+      width: auto;
+      height: 100%;
+      filter: invert(40%) sepia(0%) saturate(5%) hue-rotate(165deg) brightness(94%) contrast(78%);
+    }
+  }
+}

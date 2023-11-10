@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-services.component.scss']
 })
 export class HomeServicesComponent {
-
+  showSecondVersion: boolean = true;
 }
