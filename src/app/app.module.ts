@@ -20,6 +20,7 @@ import { HomeServiceWalkingComponent } from './home/components/home-services/com
 import { HomeServicePetSittingComponent } from './home/components/home-services/components/home-service-pet-sitting/home-service-pet-sitting.component';
 import { HomeGalleryComponent } from './home/components/home-gallery/home-gallery.component';
 import { HomeGalleryBlockComponent } from './home/components/home-gallery/components/home-gallery-block/home-gallery-block.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { HomeGalleryBlockComponent } from './home/components/home-gallery/compon
     HomeServicePetSittingComponent,
     HomeGalleryComponent,
     HomeGalleryBlockComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

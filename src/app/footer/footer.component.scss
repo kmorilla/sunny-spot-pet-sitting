@@ -1,8 +1,7 @@
-@import "../../../../variables";
+@import "../../variables";
 
 section {
   position: relative;
-  margin-top: 5rem;
 
   .section-bg {
     position: absolute;
@@ -18,12 +17,12 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    height: 70%;
+    height: 75%;
     width: 100%;
     z-index: -1;
     background-color: #FBFBFB;
-    border-bottom-left-radius: 70% 100%;
-    border-bottom-right-radius: 30% 25%;
+    border-bottom-left-radius: 30% 20%;
+    border-bottom-right-radius: 70% 65%;
   }
 
   .contact-mat-icon-container {

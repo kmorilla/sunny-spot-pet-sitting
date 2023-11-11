@@ -21,7 +21,7 @@
   </div>
 </section>
 
-<section *ngIf="showSecondVersion">
+<section class="section-tb" *ngIf="showSecondVersion">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-xl-9">
@@ -40,7 +40,7 @@
           <div class="col-3" *ngFor="let serviceCard of serviceCards2">
             <div class="icon-card">
               <div class="img-container">
-                <img src="{{ serviceCard.image }}" alt="puppy-dog">
+                <img src="~/../assets/img/{{ serviceCard.image }}" alt="puppy-dog">
               </div>
               <div class="text-center">
                 <h4 class="fw-bold">{{ serviceCard.title }}</h4>

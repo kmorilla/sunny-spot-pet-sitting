@@ -27,22 +27,22 @@ export const NailTrimDataServiceCards: IServiceCard[] = [
 
 export const NailTrimDataServiceCards2: IServiceCard[] = [
   {
-    image: TestIconConstant,
+    image: 'corgi-svgrepo-com.svg',
     title: 'The Puppy Dog',
     price: '$35',
     description: [ 'Includes nail trim & nail grinding & ear cleaning' ]
   }, {
-    image: TestIconConstant,
+    image: 'pomeranian-svgrepo-com.svg',
     title: 'Puppy Dog Plus',
     price: '$40',
     description: [ 'Includes nail trim & nail grinding, ear cleaning, <span class="primary-color fw-bold">PLUS</span> paw balm & scented spritz' ]
   }, {
-    image: TestIconConstant,
+    image: 'chow-chow-svgrepo-com.svg',
     title: 'Dapper Dog',
     price: '$45',
     description: [ 'Includes nail trim & nail grinding, ear cleaning, paw balm & scented spritz, <span class="primary-color fw-bold">PLUS</span> breathe refresh gel' ]
   }, {
-    image: TestIconConstant,
+    image: 'cat-svgrepo-com.svg',
     title: 'Purr-fect Paws',
     price: '$35',
     description: [ 'Don\'t forget the cats! Includes nail trim & ear cleaning (using cat safe wipes)' ]

@@ -1,5 +1,7 @@
 @import "variables";
 
+$sectionSize: 5.5rem;
+
 //-----------------------------------------
 //                 Main
 //-----------------------------------------
@@ -51,16 +53,16 @@ h3, h4 {
 }
 
 .section-t {
-  padding-top: 5rem;
+  padding-top: $sectionSize;
 }
 
 .section-b {
-  padding-bottom: 5rem;
+  padding-bottom: $sectionSize;
 }
 
 .section-tb {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: $sectionSize;
+  padding-bottom: $sectionSize;
 }
 
 .card {
@@ -71,4 +73,9 @@ h3, h4 {
 
 button {
   font-family: $bodyFont;
+  background-color: $primaryColor;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.75rem;
 }

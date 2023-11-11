@@ -4,18 +4,47 @@ section {
   height: calc(100vh - $navbarHeight);
   position: relative;
 
-  //.bg-blob {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  height: 100%;
-  //  width: 80%;
-  //  background-color: #fff;
-  //  z-index: -1000;
-  //}
+  .bg-blob {
+    position: absolute;
+    content: '';
+    top: -$navbarHeight;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    background-color: #fff;
+    z-index: -1;
+    border-bottom-right-radius: 75% 90%;
+    border-bottom-left-radius: 35% 20%;
+  }
+
+  .title-container {
+    display: flex;
+    height: 100%;
+
+    .title {
+      position: relative;
+      margin: auto 0;
+
+      .paw-print1 {
+        top: -6rem;
+        left: 0;
+      }
+
+      button {
+        margin-top: 3rem;
+      }
+    }
+  }
 
   .home-img-container {
     display: flex;
+    position: relative;
+
+    .paw-print2 {
+      bottom: 2.5rem;
+      right: 0;
+      transform: scaleX(-1);
+    }
 
     .home-img {
       width: 80%;
@@ -33,4 +62,12 @@ section {
       }
     }
   }
+}
+
+.paw-print {
+  position: absolute;
+  content: url("../../assets/img/paw-prints-svgrepo-com.svg");
+  height: auto;
+  width: 6rem;
+  filter: brightness(0) saturate(100%) invert(96%) sepia(6%) saturate(8%) hue-rotate(314deg) brightness(93%) contrast(87%);
 }
