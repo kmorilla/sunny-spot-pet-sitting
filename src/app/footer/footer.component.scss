@@ -9,7 +9,7 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #A67DB5;
     z-index: -2;
   }
 
@@ -20,7 +20,7 @@ section {
     height: 75%;
     width: 100%;
     z-index: -1;
-    background-color: #FBFBFB;
+    background-color: $bgColor;
     border-bottom-left-radius: 30% 20%;
     border-bottom-right-radius: 70% 65%;
   }
@@ -35,6 +35,7 @@ section {
 
     mat-icon {
       margin: auto;
+      color: $primaryColor;
     }
   }
 }

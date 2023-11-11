@@ -52,6 +52,10 @@ h3, h4 {
   color: $primaryColor;
 }
 
+.accent-color {
+  color: $accentColor;
+}
+
 .section-t {
   padding-top: $sectionSize;
 }
@@ -78,4 +82,5 @@ button {
   border: none;
   border-radius: 25px;
   padding: 0.75rem 1.75rem;
+  text-transform: uppercase;
 }

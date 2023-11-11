@@ -12,3 +12,16 @@
     }
   }
 }
+
+.img-container{
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 70% 40%;
+    border-top-right-radius: 30% 70%;
+    border-bottom-right-radius: 60% 30%;
+    border-bottom-left-radius: 40% 60%;
+  }
+}

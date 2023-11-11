@@ -43,15 +43,15 @@ export const PetSittingDataServiceCards: IServiceCard[] = [
     ],
     blob: '60% 40% 60% 40% / 60% 80% 35% 65%'
   },
-  {
-    image: DummyImageConstant,
-    title: 'Bed & Breakfast',
-    price: '$80',
-    description: [
-      `Also called an "Almost Overnight," my Bed & Breakfast service includes two 1.5 hour drop-ins, one at bedtime and the other the next morning.
-      These drop-ins typically take place at 8pm - 9:30pm and 8am - 9:30am.
-      This is a good option if you would like extended care but don’t need me to stay overnight.`
-    ],
-    blob: '45% 55% 65% 35% / 30% 60% 40% 60%'
-  }
+  // {
+  //   image: DummyImageConstant,
+  //   title: 'Bed & Breakfast',
+  //   price: '$80',
+  //   description: [
+  //     `Also called an "Almost Overnight," my Bed & Breakfast service includes two 1.5 hour drop-ins, one at bedtime and the other the next morning.
+  //     These drop-ins typically take place at 8pm - 9:30pm and 8am - 9:30am.
+  //     This is a good option if you would like extended care but don’t need me to stay overnight.`
+  //   ],
+  //   blob: '45% 55% 65% 35% / 30% 60% 40% 60%'
+  // }
 ];
