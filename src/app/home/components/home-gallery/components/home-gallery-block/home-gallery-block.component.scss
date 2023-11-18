@@ -1,10 +1,11 @@
 @import "../../../../../../variables";
+@import "../../../../../../mixins";
 
 .block {
 
   .img-container {
     width: 100%;
-    height: 18rem;
+    height: 15rem;
     margin-bottom: 1rem;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -22,5 +23,13 @@
     font-weight: bold;
     text-align: center;
     color: $primaryColor;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .block {
+    .img-container {
+      height: 18rem;
+    }
   }
 }

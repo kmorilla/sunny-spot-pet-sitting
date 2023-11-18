@@ -1,7 +1,7 @@
 @import "src/variables";
+@import "src/mixins";
 
 section {
-  height: calc(100vh - $navbarHeight);
   position: relative;
 
   .bg-blob {
@@ -9,38 +9,49 @@ section {
     content: '';
     top: -$navbarHeight;
     left: 0;
-    height: 75%;
+    height: calc(90% + $navbarHeight);
     width: 100%;
     background-color: #EDE4F1;
     z-index: -1;
     border-bottom-right-radius: 75% 90%;
-    border-bottom-left-radius: 35% 20%;
+    border-bottom-left-radius: 25% 8%;
   }
 
   .title-container {
-    display: flex;
     height: 100%;
 
     .title {
-      position: relative;
-      margin: auto 0;
+      margin: auto;
+      width: auto;
 
-      h1 {
-        letter-spacing: 2px;
+      .header-container {
+        position: relative;
+        display: flex;
+        margin-top: 6.5rem;
 
-        &:last-of-type {
-          margin-left: 6.8rem;
+        .paw-print1 {
+          top: -6rem;
+          left: 0;
+        }
+
+        .header {
+          margin-right: auto;
+          margin-left: auto;
+
+          h1 {
+            letter-spacing: 2px;
+
+            &:last-of-type {
+              padding-left: 6.8rem;
+            }
+          }
         }
       }
 
       h3 {
-        font-size: 3.1rem;
+        font-size: min(7.5vw, 3.1rem);
         text-align: center;
-      }
-
-      .paw-print1 {
-        top: -6rem;
-        left: 0;
+        margin: auto;
       }
 
       button {
@@ -60,9 +71,8 @@ section {
     }
 
     .home-img {
-      width: 80%;
-      height: auto;
-      margin: auto;
+      margin-top: auto;
+      margin-bottom: auto;
       overflow: hidden;
       border-top-left-radius: 35% 35%;
       border-top-right-radius: 65% 70%;
@@ -75,12 +85,33 @@ section {
       }
     }
   }
+
+  .paw-print {
+    position: absolute;
+    content: url("../../assets/img/paw-prints-svgrepo-com.svg");
+    height: auto;
+    width: 6rem;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(2798%) hue-rotate(324deg) brightness(103%) contrast(124%);
+  }
 }
 
-.paw-print {
-  position: absolute;
-  content: url("../../assets/img/paw-prints-svgrepo-com.svg");
-  height: auto;
-  width: 6rem;
-  filter: brightness(0) saturate(100%) invert(95%) sepia(6%) saturate(2798%) hue-rotate(324deg) brightness(103%) contrast(124%);
+@include media-breakpoint-up(lg)  {
+  section {
+    height: calc(100vh - $navbarHeight);
+    padding-bottom: 0;
+
+    .title-container {
+      display: flex;
+
+      .title {
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .header-container {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
+

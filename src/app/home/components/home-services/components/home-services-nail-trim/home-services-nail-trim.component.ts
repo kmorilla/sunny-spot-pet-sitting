@@ -1,7 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { NailTrimDataServiceCards, NailTrimDataServiceCards2 } from './home-services-nail-trim.data';
-import { IServiceCard } from '../home-service-card/home-service-card.model';
-import { DummyImageConstant } from '../../../../../constants/image.constant';
+import { Component } from '@angular/core';
+import { NailTrimDataServiceModel } from './home-services-nail-trim.data';
+import { IServiceModel } from '../../home-services.model';
 
 @Component({
   selector: 'app-home-services-nail-trim',
@@ -9,9 +8,5 @@ import { DummyImageConstant } from '../../../../../constants/image.constant';
   styleUrls: ['./home-services-nail-trim.component.scss']
 })
 export class HomeServicesNailTrimComponent {
-  @Input() showSecondVersion: boolean = false;
-  img: string = DummyImageConstant;
-  serviceCards: IServiceCard[] = NailTrimDataServiceCards;
-  serviceCards2: IServiceCard[] = NailTrimDataServiceCards2;
-    protected readonly DummyImageConstant = DummyImageConstant;
+  serviceModel: IServiceModel = NailTrimDataServiceModel
 }

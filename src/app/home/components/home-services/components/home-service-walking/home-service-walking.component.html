@@ -1,43 +1,16 @@
-<section class="section-tb" *ngIf="!showSecondVersion">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-7">
-        <div class="text-center">
-          <h2>Dog Walking</h2>
-          <p>Every dog loves a walk. I offer private walks around the neighborhood.
-          Whether your dog needs to go potty while you're at work or needs exercise to get some of that energy out,
-          I have a service to fit.</p>
-          <p class="pb-4">LIMITED SPOTS AVAILABLE</p>
-        </div>
-      </div>
-    </div>
-    <div class="row g-3 justify-content-center">
-      <div class="col-6" *ngFor="let serviceCard of serviceCards">
-        <app-home-service-card [serviceCard]="serviceCard"></app-home-service-card>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-tb" *ngIf="showSecondVersion">
+<section class="section-tb">
   <div class="container">
     <div class="row g-5 justify-content-center">
-      <div class="col-4 order-1">
-        <div class="img-container">
-          <img [src]="img" alt="">
+      <div class="col-12 col-lg-6">
+        <div class="text-center text-lg-start">
+          <h2>{{serviceModel.title}}</h2>
+          <h5 class="fw-bold accent-color">{{ serviceModel.price }}</h5>
+          <p *ngFor="let descr of serviceModel.description; let last = last;" [class.pb-4]="last">{{ descr }}</p>
         </div>
       </div>
-      <div class="col-6 order-0">
-        <div>
-          <h2>Dog Walking</h2>
-          <h5 class="fw-bold accent-color">$35</h5>
-          <p>Every dog loves a walk. I offer private walks around the neighborhood.
-            Whether your dog needs to go potty while you're at work or needs exercise to get some of that energy out,
-            I have a service to fit.</p>
-          <p>I come to your home to take your dog on a private walk around your neighborhood.
-            I walk your dog one-on-one to provide individual attention.
-            Your dog can investigate all the new smells, go potty, & get some of those wiggles out.</p>
-          <p class="pb-4">LIMITED SPOTS AVAILABLE</p>
+      <div class="col-7 col-md-5 col-lg-4 col-xxl-3">
+        <div class="img-container">
+          <img class="image" [src]="serviceModel.image" alt="">
         </div>
       </div>
     </div>

@@ -14,8 +14,6 @@ import { HomeAboutComponent } from './home/components/home-about/home-about.comp
 import { HomeExperienceComponent } from './home/components/home-experience/home-experience.component';
 import { HomeServicesComponent } from './home/components/home-services/home-services.component';
 import { HomeServicesNailTrimComponent } from './home/components/home-services/components/home-services-nail-trim/home-services-nail-trim.component';
-import { HomeServiceCardComponent } from './home/components/home-services/components/home-service-card/home-service-card.component';
-import { HomeContactComponent } from './home/components/home-contact/home-contact.component';
 import { HomeServiceWalkingComponent } from './home/components/home-services/components/home-service-walking/home-service-walking.component';
 import { HomeServicePetSittingComponent } from './home/components/home-services/components/home-service-pet-sitting/home-service-pet-sitting.component';
 import { HomeGalleryComponent } from './home/components/home-gallery/home-gallery.component';
@@ -33,8 +31,6 @@ import { FooterComponent } from './footer/footer.component';
     HomeExperienceComponent,
     HomeServicesComponent,
     HomeServicesNailTrimComponent,
-    HomeServiceCardComponent,
-    HomeContactComponent,
     HomeServiceWalkingComponent,
     HomeServicePetSittingComponent,
     HomeGalleryComponent,

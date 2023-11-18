@@ -1,50 +1,17 @@
-﻿import { DummyImageConstant, TestIconConstant } from '../../../../../constants/image.constant';
-import { IServiceCard } from '../home-service-card/home-service-card.model';
+﻿import { DummyImageConstant } from '../../../../../constants/image.constant';
+import { IServiceModel } from '../../home-services.model';
 
-export const NailTrimDataServiceCards: IServiceCard[] = [
+export const NailTrimDataServiceModel: IServiceModel =
   {
     image: DummyImageConstant,
-    title: 'The Puppy Dog',
-    price: '$35',
-    description: [ 'Includes nail trim & nail grinding & ear cleaning' ]
-  }, {
-    image: DummyImageConstant,
-    title: 'Puppy Dog Plus',
-    price: '$40',
-    description: [ 'Includes nail trim & nail grinding, ear cleaning, <span class="primary-color fw-bold">PLUS</span> paw balm & scented spritz' ]
-  }, {
-    image: DummyImageConstant,
-    title: 'Dapper Dog',
-    price: '$45',
-    description: [ 'Includes nail trim & nail grinding, ear cleaning, paw balm & scented spritz, <span class="primary-color fw-bold">PLUS</span> breathe refresh gel' ]
-  }, {
-    image: DummyImageConstant,
-    title: 'Purr-fect Paws',
-    price: '$35',
-    description: [ 'Don\'t forget the cats! Includes nail trim & ear cleaning (using cat safe wipes)' ]
-  }
-];
-
-export const NailTrimDataServiceCards2: IServiceCard[] = [
-  {
-    image: 'corgi-svgrepo-com.svg',
-    title: 'The Puppy Dog',
-    price: '$35',
-    description: [ 'Includes nail trim & nail grinding & ear cleaning' ]
-  }, {
-    image: 'pomeranian-svgrepo-com.svg',
-    title: 'Puppy Dog Plus',
-    price: '$40',
-    description: [ 'Includes nail trim & nail grinding, ear cleaning, <span class="primary-color fw-bold">PLUS</span> paw balm & scented spritz' ]
-  }, {
-    image: 'chow-chow-svgrepo-com.svg',
-    title: 'Dapper Dog',
-    price: '$45',
-    description: [ 'Includes nail trim & nail grinding, ear cleaning, paw balm & scented spritz, <span class="primary-color fw-bold">PLUS</span> breathe refresh gel' ]
-  }, {
-    image: 'cat-svgrepo-com.svg',
-    title: 'Purr-fect Paws',
-    price: '$35',
-    description: [ 'Don\'t forget the cats! Includes nail trim & ear cleaning (using cat safe wipes)' ]
-  }
-];
+    title: 'Nail Trimming',
+    price: '$30',
+    description: [
+      `Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
+        in the carpet & hurt you when your pet jumps on your lap, it can also be painful for your pet. In dogs, long
+        nails can cause the feet to splay out & put extra pressure on the toes.
+        Long term, this can cause shoulder, elbow & knee injuries, & can also contribute to arthritis. For geriatric
+        dogs & active sporting dogs it is even more important to have short nails because long nails can hinder
+        balance.`
+    ]
+  };

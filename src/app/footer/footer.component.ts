@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IContactInfo } from '../home/components/home-contact/home-contact.model';
-import { ContactInfosConst } from '../home/components/home-contact/home-contact.data';
+import { ContactInfoModels } from './footer.data';
+import { IContactInfoModel } from './footer.model';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +8,5 @@ import { ContactInfosConst } from '../home/components/home-contact/home-contact.
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  contactInfos: IContactInfo[] = ContactInfosConst;
+  contactInfos: IContactInfoModel[] = ContactInfoModels;
 }

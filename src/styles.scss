@@ -1,9 +1,8 @@
 @import "variables";
-
-$sectionSize: 5.5rem;
+@import "mixins";
 
 //-----------------------------------------
-//                 Main
+//                 Misc
 //-----------------------------------------
 html, body {
   height: 100%;
@@ -24,11 +23,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: min(9vw, 4.5rem);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: min(6.5vw, 3rem);
 }
 
 h3 {
@@ -48,6 +47,10 @@ h3, h4 {
   font-family: $accentFont;
 }
 
+//-----------------------------------------
+//                 Colors
+//-----------------------------------------
+
 .primary-color {
   color: $primaryColor;
 }
@@ -56,26 +59,44 @@ h3, h4 {
   color: $accentColor;
 }
 
+//-----------------------------------------
+//                 Sections
+//-----------------------------------------
+$sectionSizeSm: 3.5rem;
+$sectionSizeReg: 5.5rem;
+
 .section-t {
-  padding-top: $sectionSize;
+  padding-top: $sectionSizeSm;
 }
 
 .section-b {
-  padding-bottom: $sectionSize;
+  padding-bottom: $sectionSizeSm;
 }
 
 .section-tb {
-  padding-top: $sectionSize;
-  padding-bottom: $sectionSize;
+  padding-top: $sectionSizeSm;
+  padding-bottom: $sectionSizeSm;
 }
 
-.card {
-  border: none;
-  border-radius: 20px;
-  overflow: hidden;
+@include media-breakpoint-up(lg) {
+  .section-t {
+    padding-top: $sectionSizeReg;
+  }
+
+  .section-b {
+    padding-bottom: $sectionSizeReg;
+  }
+
+  .section-tb {
+    padding-top: $sectionSizeReg;
+    padding-bottom: $sectionSizeReg;
+  }
 }
 
-button {
+//-----------------------------------------
+//                 Buttons
+//-----------------------------------------
+.button {
   font-family: $bodyFont;
   background-color: $primaryColor;
   color: #fff;
@@ -83,4 +104,12 @@ button {
   border-radius: 25px;
   padding: 0.75rem 1.75rem;
   text-transform: uppercase;
+  box-shadow: 2px 2px 7px 0 $primaryColor;
+}
+
+//-----------------------------------------
+//                 Images
+//-----------------------------------------
+.image {
+  box-shadow: 2px 2px 7px -2px $primaryColor;
 }

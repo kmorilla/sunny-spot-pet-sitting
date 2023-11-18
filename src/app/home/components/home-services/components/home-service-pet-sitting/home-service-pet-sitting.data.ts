@@ -1,7 +1,7 @@
-﻿import { DummyImageConstant, TestIconConstant } from '../../../../../constants/image.constant';
-import { IServiceCard } from '../home-service-card/home-service-card.model';
+﻿import { DummyImageConstant } from '../../../../../constants/image.constant';
+import { IServiceModel } from '../../home-services.model';
 
-export const PetSittingDataServiceCards: IServiceCard[] = [
+export const PetSittingDataServiceModels: IServiceModel[] = [
   {
     image: DummyImageConstant,
     title: 'Cat Sitting',
