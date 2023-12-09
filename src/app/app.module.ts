@@ -19,6 +19,11 @@ import { HomeServicePetSittingComponent } from './home/components/home-services/
 import { HomeGalleryComponent } from './home/components/home-gallery/home-gallery.component';
 import { HomeGalleryBlockComponent } from './home/components/home-gallery/components/home-gallery-block/home-gallery-block.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServicesComponent } from './services/services.component';
+import { ServiceNailTrimmingComponent } from './services/service-nail-trimming/service-nail-trimming.component';
+import { ServicePetSittingComponent } from './services/service-pet-sitting/service-pet-sitting.component';
+import { ServicePottyBreaksComponent } from './services/service-potty-breaks/service-potty-breaks.component';
+import { ServiceFarmPetCareComponent } from './services/service-farm-pet-care/service-farm-pet-care.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +41,11 @@ import { FooterComponent } from './footer/footer.component';
     HomeGalleryComponent,
     HomeGalleryBlockComponent,
     FooterComponent,
+    ServicesComponent,
+    ServiceNailTrimmingComponent,
+    ServicePetSittingComponent,
+    ServicePottyBreaksComponent,
+    ServiceFarmPetCareComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <section class="section-tb">
   <div class="container">
     <div class="row g-5 justify-content-center">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 col-xxl-7">
         <div class="text-center text-lg-start">
           <h2>{{serviceModel.title}}</h2>
           <h5 class="fw-bold accent-color">{{ serviceModel.price }}</h5>
@@ -9,8 +9,8 @@
         </div>
       </div>
       <div class="col-6 col-md-5 col-lg-4 col-xxl-3">
-        <div class="img-container">
-          <img [src]="serviceModel.image" alt="">
+        <div class="img-container d-flex">
+          <img class="image-shadow my-auto" [src]="'/assets/img/' + serviceModel.image" alt="">
         </div>
       </div>
     </div>

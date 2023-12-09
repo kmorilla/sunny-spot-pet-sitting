@@ -1,23 +1,25 @@
 @import "src/styles";
 
 .navbar {
-  height: $navbarHeight;
-  background-color: transparent;
-  transition-duration: 0.5s;
+  min-height: $navbarHeight;
+  opacity: 0.85;
+  //background-color: transparent;
+  //transition-duration: 0.5s;
 
   &.solid{
-    background-color: $bgColor;
+    background-color: $lightPrimaryColor;
   }
 
   .navbar-brand {
     img {
       height: 30px;
       width: 30px;
+      border-radius: 50%;
     }
   }
 
   .navbar-toggler {
-    color: $accentColor;
+    color: $primaryColor;
     border: none;
 
     &:focus {
@@ -27,7 +29,11 @@
   }
 
   .nav-item a {
-    color: #000;
+    color: $fontColor;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 }
 

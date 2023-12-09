@@ -11,7 +11,7 @@ section {
     left: 0;
     height: calc(90% + $navbarHeight);
     width: 100%;
-    background-color: #EDE4F1;
+    background-color: $lightPrimaryColor;
     z-index: -1;
     border-bottom-right-radius: 75% 90%;
     border-bottom-left-radius: 25% 8%;
@@ -54,7 +54,7 @@ section {
         margin: auto;
       }
 
-      button {
+      .button {
         margin-top: 3rem;
       }
     }
@@ -65,7 +65,7 @@ section {
     position: relative;
 
     .paw-print2 {
-      bottom: 2.5rem;
+      bottom: 0.5rem;
       right: 0;
       transform: scaleX(-1);
     }
@@ -73,15 +73,14 @@ section {
     .home-img {
       margin-top: auto;
       margin-bottom: auto;
-      overflow: hidden;
-      border-top-left-radius: 35% 35%;
-      border-top-right-radius: 65% 70%;
-      border-bottom-right-radius: 70% 30%;
-      border-bottom-left-radius: 30% 65%;
 
       img {
         height: auto;
         width: 100%;
+        border-top-left-radius: 35% 35%;
+        border-top-right-radius: 65% 70%;
+        border-bottom-right-radius: 70% 30%;
+        border-bottom-left-radius: 30% 65%;
       }
     }
   }

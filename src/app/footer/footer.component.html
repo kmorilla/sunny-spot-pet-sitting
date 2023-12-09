@@ -1,4 +1,4 @@
-<section class="section-tb">
+<section id="contact" class="section-tb">
   <div class="section-bg"></div>
   <div class="top-round-shape"></div>
   <div class="container">
@@ -9,9 +9,11 @@
     </div>
     <div class="row">
       <div class="col-12 col-md-8 col-xl-6">
-        <p>The best way to reach me is by texting me. I am busy during the day caring for animals which is always my
-          first priority & many times I am not able to listen to voicemails in a timely fashion. For a quicker response
-          time you can text, or email, and fill out a New Client Intake Form - Thank you</p>
+        <p>The best way to reach me is through the Time to Pet App or by texting.</p>
+        <p>
+          I am busy during the day caring for animals, who are always my first priority & many times I am not able to
+          listen to voicemails in a timely fashion. - Thank you for your understanding
+        </p>
       </div>
       <div class="col-12 col-md-4 col-xl-6">
         <div class="d-flex">
@@ -20,7 +22,8 @@
               <div class="contact-mat-icon-container">
                 <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
               </div>
-              <p class="my-auto">{{ contactInfo.info }}</p>
+              <h5 *ngIf="!contactInfo.isLink" class="my-auto info">{{ contactInfo.info }}</h5>
+              <a *ngIf="contactInfo.isLink" href="{{ contactInfo.link }}" target="_blank">{{ contactInfo.info }}</a>
             </div>
           </div>
         </div>

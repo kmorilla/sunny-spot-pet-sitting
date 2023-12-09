@@ -3,9 +3,9 @@ import { IServiceModel } from '../../home-services.model';
 
 export const NailTrimDataServiceModel: IServiceModel =
   {
-    image: DummyImageConstant,
+    image: 'sunnyspot-dog-nail-clippers.jpg',
     title: 'Nail Trimming',
-    price: '$30',
+    price: '$30 for first pet, $20 for each additional pet',
     description: [
       `Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
         in the carpet & hurt you when your pet jumps on your lap, it can also be painful for your pet. In dogs, long
