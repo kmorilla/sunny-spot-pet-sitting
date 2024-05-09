@@ -25,23 +25,25 @@ section {
     border-bottom-right-radius: 70% 65%;
   }
 
-  .contact-mat-icon-container {
-    height: 40px;
-    width: 40px;
-    background-color: $accentColor;
-    margin-right: 1rem;
-    display: flex;
-    border-radius: 50%;
+  .contact {
+    .contact-mat-icon-container {
+      height: 40px;
+      width: 40px;
+      background-color: $accentColor;
+      margin-right: 1rem;
+      display: flex;
+      border-radius: 50%;
 
-    mat-icon {
-      margin: auto;
-      color: $primaryColor;
+      mat-icon {
+        margin: auto;
+        color: $primaryColor;
+      }
     }
-  }
 
-  a {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-    color: $fontColor;
+    a {
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
+      color: $fontColor;
+    }
   }
 }

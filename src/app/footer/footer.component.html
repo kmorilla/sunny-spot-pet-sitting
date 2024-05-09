@@ -2,23 +2,24 @@
   <div class="section-bg"></div>
   <div class="top-round-shape"></div>
   <div class="container">
-    <div class="row">
-      <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center text-md-start">
         <h2>Contact Me</h2>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-8 col-xl-6">
+      <div class="col-12 col-md-7 col-xl-6 text-center text-md-start">
         <p>The best way to reach me is through the Time to Pet App or by texting.</p>
         <p>
           I am busy during the day caring for animals, who are always my first priority & many times I am not able to
           listen to voicemails in a timely fashion. - Thank you for your understanding
         </p>
-      </div>
-      <div class="col-12 col-md-4 col-xl-6">
         <div class="d-flex">
-          <div class="mt-3 mt-md-0 ms-md-auto">
-            <div class="d-flex mb-3" *ngFor="let contactInfo of contactInfos">
+          <a class="button mt-3 mx-auto ms-md-0 mb-4 mb-md-0" href="https://form.jotform.com/221837831687164" target="_blank">New Clients click here!</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 col-xl-6">
+        <div class="d-flex">
+          <div class="mt-3 mt-md-0 mx-auto ms-md-auto me-md-0">
+            <div class="d-flex mb-3 contact" *ngFor="let contactInfo of contactInfos">
               <div class="contact-mat-icon-container">
                 <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
               </div>

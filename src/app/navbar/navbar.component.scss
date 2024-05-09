@@ -1,20 +1,31 @@
 @import "src/styles";
 
-.navbar {
+nav#navbarThingy {
   min-height: $navbarHeight;
-  opacity: 0.85;
-  //background-color: transparent;
-  //transition-duration: 0.5s;
+  background-color: transparent;
+  transition-duration: 0.5s;
 
-  &.solid{
+  &.solid {
     background-color: $lightPrimaryColor;
+    opacity: 0.75;
+  }
+
+  &:hover, &:focus-within {
+    opacity: 1;
+  }
+
+  &:focus-within {
+    background-color: $lightPrimaryColor !important;
   }
 
   .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px;
+
     img {
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
+      height: 100%;
+      width: auto;
     }
   }
 
@@ -41,8 +52,8 @@
   .navbar {
     .navbar-brand {
       img {
-        height: 40px;
-        width: 40px;
+        height: 100%;
+        width: auto;
       }
     }
   }
