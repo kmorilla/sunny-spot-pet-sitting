@@ -7,8 +7,7 @@ export const PetSittingDataServiceModels: IServiceModel[] = [
     title: 'Cat Sitting',
     price: '$30 for 30 minutes, $40 for 45 minutes, $50 for 60 minutes',
     description: [
-      'Kitties are my specialty! I drop by your home to provide fresh food & water for your cats, and scoop the litter box at every drop-in. Each cat has a different personality and different needs. I will play & give attention to your cat, if they are outgoing. And if they are shy and prefer to be left alone, I will give them their space. I can also collect your mail, water your houseplants, & pull your trash bin to the curb. Standard drop-in visit is 30 minutes. Drop-ins are scheduled in 2 hour arrival windows. These arrival windows are Mornings: between 8am to 10am; Midday: between 12pm to 2pm; and Evenings: between 4pm to 6pm. At every drop-in I will notify you of my arrival and departure and send photo updates of your cats.',
-      'Price includes 2 cats, +$5 if more than two cats.'
+      'Kitties are my specialty! I drop by your home to provide fresh food & water for your cats, and scoop the litter box at every drop-in. Each cat has a different personality and different needs. I will play & give attention to your cat, if they are outgoing. And if they are shy and prefer to be left alone, I will give them their space. I can also collect your mail, water your houseplants, & pull your trash bin to the curb. Standard drop-in visit is 30 minutes. At every drop-in I will notify you of my arrival and departure and send photo updates of your cats.',
     ],
     blob: '65% 35% 65% 35% / 60% 50% 50% 30%'
   }, {
@@ -19,10 +18,7 @@ export const PetSittingDataServiceModels: IServiceModel[] = [
       `I drop by your home to feed & water your pets, provide a potty break, as well as play & give attention to your pets.
     I can also collect your mail, water your houseplants, & pull your trash bin to the curb.
     Standard drop-in visit is 30 minutes. A 10 or 15 minute long dog walk can be included upon request.
-    Drop-ins are scheduled in 2 hour arrival windows.
-    These arrival windows are Mornings: between 8am to 10am; Midday: between 12pm to 2pm; and Evenings: between 4pm to 6pm.
-    At every drop-in I will notify you of my arrival and departure and send photo updates of your pets.`,
-      'Price includes 2 pets, +$5 if more than two pets.'
+    At every drop-in I will notify you of my arrival and departure and send photo updates of your pets.`
     ],
     blob: '50% 50% 80% 35% / 40% 80% 40% 80%'
   },

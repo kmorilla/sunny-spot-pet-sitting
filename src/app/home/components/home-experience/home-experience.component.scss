@@ -16,3 +16,15 @@
   margin-bottom: 0;
   color: $primaryColor;
 }
+
+.seals {
+  display: flex;
+  margin-top: 2rem;
+
+  .seal {
+    width: 100px;
+    height: auto;
+    margin: auto;
+  }
+}
+
