@@ -5,7 +5,7 @@ export const PetSittingDataServiceModels: IServiceModel[] = [
   {
     image: 'CAT-SITTING2 (1)(1).jpg',
     title: 'Cat Sitting',
-    price: '$30 for 30 minutes, $40 for 45 minutes, $50 for 60 minutes',
+    price: 'Starts at $30. Offering, 30, 45, & 60 minutes',
     description: [
       'Kitties are my specialty! I drop by your home to provide fresh food & water for your cats, and scoop the litter box at every drop-in. Each cat has a different personality and different needs. I will play & give attention to your cat, if they are outgoing. And if they are shy and prefer to be left alone, I will give them their space. I can also collect your mail, water your houseplants, & pull your trash bin to the curb. Standard drop-in visit is 30 minutes. At every drop-in I will notify you of my arrival and departure and send photo updates of your cats.',
     ],
@@ -13,7 +13,7 @@ export const PetSittingDataServiceModels: IServiceModel[] = [
   }, {
     image: 'pet-sitting.jpg',
     title: 'Pet Sitting',
-    price: '$30 for 30 minutes, $40 for 45 minutes, $50 for 60 minutes',
+    price: 'Starts at $30. Offering, 30, 45, & 60 minutes',
     description: [
       `I drop by your home to feed & water your pets, provide a potty break, as well as play & give attention to your pets.
     I can also collect your mail, water your houseplants, & pull your trash bin to the curb.

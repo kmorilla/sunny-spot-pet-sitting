@@ -5,7 +5,7 @@ export const NailTrimDataServiceModel: IServiceModel =
   {
     image: 'sunnyspot-dog-nail-clippers.jpg',
     title: 'Nail Trimming',
-    price: '$30 for first pet, $20 for each additional pet',
+    price: 'Starts at $30 for first pet',
     description: [
       `Regular nail trims are essential for healthy & happy pets. Not only can long nails get snagged
         in the carpet & hurt you when your pet jumps on your lap, it can also be painful for your pet. In dogs, long
