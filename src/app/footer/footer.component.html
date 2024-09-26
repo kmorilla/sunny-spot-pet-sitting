@@ -2,30 +2,40 @@
   <div class="section-bg"></div>
   <div class="top-round-shape"></div>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center text-md-start">
-        <h2>Contact Me</h2>
-      </div>
-      <div class="col-12 col-md-7 col-xl-6 text-center text-md-start">
-        <p>The best way to reach me is through the Time to Pet App or by texting.</p>
-        <p>
-          I am busy during the day caring for animals, who are always my first priority & many times I am not able to
-          listen to voicemails in a timely fashion. - Thank you for your understanding
-        </p>
-        <div class="d-flex">
-          <a class="button mt-3 mx-auto ms-md-0 mb-4 mb-md-0" href="https://form.jotform.com/221837831687164" target="_blank">New Clients click here!</a>
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-6">
+        <div class="col-12 text-center text-md-start">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="col-12 text-center text-md-start">
+          <p>The best way to reach me is through the Time to Pet App or by texting.</p>
+          <p>
+            I am busy during the day caring for animals, who are always my first priority & many times I am not able to
+            listen to voicemails in a timely fashion. - Thank you for your understanding
+          </p>
+          <div class="d-flex">
+            <a class="button mt-4 mx-auto ms-md-0 mb-4 mb-md-0"
+               href="https://form.jotform.com/221837831687164"
+               target="_blank">New Clients click here!</a>
+          </div>
+          <div class="d-flex">
+            <div class="mt-4 mt-md-5 mx-auto mx-md-0">
+              <div class="d-flex mb-3 contact" *ngFor="let contactInfo of contactInfos">
+                <div class="contact-mat-icon-container">
+                  <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
+                </div>
+                <h5 *ngIf="!contactInfo.isLink" class="my-auto info">{{ contactInfo.info }}</h5>
+                <a *ngIf="contactInfo.isLink" href="{{ contactInfo.link }}" target="_blank">{{ contactInfo.info }}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-12 col-md-5 col-xl-6">
+      <div class="col-12 col-md-5 col-xl-4 mt-5 mt-md-3">
         <div class="d-flex">
-          <div class="mt-3 mt-md-0 mx-auto ms-md-auto me-md-0">
-            <div class="d-flex mb-3 contact" *ngFor="let contactInfo of contactInfos">
-              <div class="contact-mat-icon-container">
-                <mat-icon class="me-2">{{ contactInfo.matIcon }}</mat-icon>
-              </div>
-              <h5 *ngIf="!contactInfo.isLink" class="my-auto info">{{ contactInfo.info }}</h5>
-              <a *ngIf="contactInfo.isLink" href="{{ contactInfo.link }}" target="_blank">{{ contactInfo.info }}</a>
-            </div>
+          <div class="iframe-container ms-auto image-shadow">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1ZQxjUUQIU59TgpM13ZAgiWEdveBT7Us&ehbc=2E312F"
+                    class="iframe"></iframe>
           </div>
         </div>
       </div>
